@@ -40,7 +40,7 @@ module Quickbooks
       xml_accessor :purchase_cost, :from => 'PurchaseCost', :as => BigDecimal, :to_xml => to_xml_big_decimal
       xml_accessor :expense_account_ref, :from => 'ExpenseAccountRef', :as => BaseReference
       xml_accessor :asset_account_ref, :from => 'AssetAccountRef', :as => BaseReference
-      xml_accessor :track_quantity_on_hand?, :from => 'TrackQtyOnHand'
+      xml_accessor :track_quantity_on_hand, :from => 'TrackQtyOnHand'
       xml_accessor :quantity_on_hand, :from => 'QtyOnHand', :as => BigDecimal, :to_xml => to_xml_big_decimal
       xml_accessor :sales_tax_code_ref, :from => 'SalesTaxCodeRef', :as => BaseReference
       xml_accessor :purchase_tax_code_ref, :from => 'PurchaseTaxCodeRef', :as => BaseReference
